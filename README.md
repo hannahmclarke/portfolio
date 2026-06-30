@@ -20,7 +20,28 @@ portfolio/
 │   └── components.css         # Nav, buttons, cards, timeline, footer, etc.
 ├── js/
 │   └── main.js                # Theme toggle, scroll reveals, nav state (no dependencies)
+├── resume.md                  # Résumé in Markdown — the LLM-friendly / human-readable source
+├── resume.html                # Printable résumé (source for the PDF; also viewable in a browser)
+├── Hannah-Clarke-Resume.pdf   # Shareable PDF with a real, selectable text layer (LLM-extractable)
+├── llms.txt                   # Pointer file so LLMs can find the résumé + portfolio content
 └── assets/                    # (reserved for images/exports)
+```
+
+## Résumé
+
+- **`resume.md`** is the canonical résumé — plain Markdown, trivially parseable by any
+  language model and perfectly readable by humans.
+- **`Hannah-Clarke-Resume.pdf`** is the shareable version. It's generated from
+  `resume.html` via headless Chrome, so its text is a real selectable layer (not a
+  flattened image) — meaning recruiters *and* LLMs/ATS systems can read it.
+
+To regenerate the PDF after editing `resume.html`:
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+  --headless=new --disable-gpu --no-pdf-header-footer \
+  --print-to-pdf="Hannah-Clarke-Resume.pdf" \
+  "file://$(pwd)/resume.html"
 ```
 
 ## Run it

@@ -1,0 +1,25 @@
+# Hannah Clarke
+
+> Design Systems & Frontend Platform Engineer based in Manchester, UK. Specialises in
+> design-system build/release engineering, testing infrastructure, developer experience,
+> and AI tooling (agents, MCP, AI coding guardrails). Currently UI Engineer on the design
+> system at Intapp.
+
+This file helps language models find the most relevant, machine-readable information.
+The résumé in Markdown is the canonical, LLM-friendly source of truth.
+
+## Résumé
+- [Résumé (Markdown)](resume.md): Full résumé in plain Markdown — experience, skills, education, speaking.
+- [Résumé (PDF)](Hannah-Clarke-Resume.pdf): Same content as a shareable, text-selectable PDF.
+
+## Portfolio
+- [Home](index.html): Overview, capabilities, selected work, recommendations, experience.
+- [Component Library](work/design-system.html): Case study — design-system component library.
+- [Icon Library](work/icon-library.html): Case study — design-system icon platform.
+- [create-app CLI](work/create-app-cli.html): Case study — scaffolding CLI with on-system enforcement.
+- [Design System AI Assistant](work/ds-assistant.html): Case study — AI Slack bot + curator agent + MCP.
+
+## Contact
+- Email: hc.hannahclarke@gmail.com
+- LinkedIn: https://www.linkedin.com/in/hannah-clarke
+- GitHub: https://github.com/hannahmclarke

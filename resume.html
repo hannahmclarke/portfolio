@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hannah Clarke — Résumé</title>
+  <meta name="description" content="Résumé of Hannah Clarke — Design Systems & Frontend Platform Engineer." />
+  <style>
+    :root {
+      --ink: #1a1d28;
+      --muted: #555c70;
+      --accent: #5b50e6;
+      --rule: #d9dbe6;
+      --bg: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.45;
+      font-size: 10.6pt;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 28px 32px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+
+    header { border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-bottom: 16px; }
+    h1 { font-size: 23pt; letter-spacing: -0.02em; line-height: 1.1; }
+    .role { font-size: 11.5pt; font-weight: 600; color: var(--accent); margin-top: 3px; }
+    .contact { margin-top: 8px; font-size: 9.4pt; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+    .contact span { white-space: nowrap; }
+
+    section { margin-top: 15px; }
+    h2 {
+      font-size: 9.6pt; text-transform: uppercase; letter-spacing: 0.13em;
+      color: var(--accent); border-bottom: 1px solid var(--rule);
+      padding-bottom: 4px; margin-bottom: 9px;
+    }
+    p { margin-bottom: 6px; }
+    .summary { color: #2c3142; }
+
+    .job { margin-bottom: 12px; }
+    .job:last-child { margin-bottom: 0; }
+    .job__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .job__title { font-size: 11pt; font-weight: 700; }
+    .job__org { color: var(--accent); font-weight: 600; }
+    .job__when { font-size: 9pt; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .job__lead { font-size: 9.8pt; color: var(--muted); margin: 3px 0 5px; }
+    ul { list-style: none; }
+    li { position: relative; padding-left: 14px; margin-bottom: 3.5px; font-size: 9.9pt; }
+    li::before { content: ""; position: absolute; left: 2px; top: 6.5px; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
+
+    .skills div { margin-bottom: 5px; font-size: 9.9pt; }
+    .skills strong { color: var(--ink); }
+
+    .two-col { columns: 2; column-gap: 28px; }
+    .edu-row { margin-bottom: 6px; break-inside: avoid; font-size: 9.9pt; }
+    .edu-row b { display: block; }
+    .edu-row span { color: var(--muted); font-size: 9.2pt; }
+
+    .talklist li { margin-bottom: 5px; }
+    .talklist b { font-weight: 600; }
+    .langs { font-size: 9.9pt; color: #2c3142; }
+
+    @page { size: A4; margin: 12mm 13mm; }
+    @media print {
+      body { padding: 0; max-width: none; font-size: 10pt; }
+      a { color: var(--accent); }
+      .job, .edu-row { break-inside: avoid; }
+      h2 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hannah Clarke</h1>
+    <div class="role">Design Systems &amp; Frontend Platform Engineer</div>
+    <div class="contact">
+      <span>Manchester, UK</span>
+      <span>·</span>
+      <span><a href="mailto:hc.hannahclarke@gmail.com">hc.hannahclarke@gmail.com</a></span>
+      <span>·</span>
+      <span><a href="https://www.linkedin.com/in/hannah-clarke">linkedin.com/in/hannah-clarke</a></span>
+      <span>·</span>
+      <span><a href="https://github.com/hannahmclarke">github.com/hannahmclarke</a></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Frontend engineer specialising in design systems and developer platforms. I work a layer below the visible component catalogue — on the build, release, testing and tooling that decide whether a design system is genuinely adoptable — and, increasingly, on the AI tooling that helps engineers and designers stay on-system. I came into engineering from nearly a decade in widening-access education, and care about widening that door for others.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Core skills</h2>
+    <div><strong>Languages &amp; frameworks:</strong> TypeScript, JavaScript, React (18 &amp; 19), Next.js (SSR), Stencil / Web Components, Node.js, Python</div>
+    <div><strong>Design systems:</strong> component &amp; icon libraries, design tokens, SCSS, Storybook, Chromatic, accessibility</div>
+    <div><strong>Build &amp; release:</strong> npm-workspaces monorepos, Rollup, Vite, Changesets, package publishing, CI/CD (Azure Pipelines)</div>
+    <div><strong>Testing:</strong> Vitest, Jest, Playwright, Puppeteer, visual-regression &amp; interaction testing</div>
+    <div><strong>AI &amp; developer experience:</strong> Anthropic SDK, Claude Agent SDK, Model Context Protocol (MCP), AI coding guardrails, Slack bots, scaffolding CLIs</div>
+    <div><strong>Cloud &amp; infra:</strong> Azure (App Service, Pipelines, CDN), AWS, Terraform</div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job__head">
+        <div class="job__title">UI Engineer, Design System <span class="job__org">· Intapp</span></div>
+        <div class="job__when">Jul 2024 – Present</div>
+      </div>
+      <p class="job__lead">Core engineer on a code-driven design system serving multiple product teams — web-components-first (Stencil), shipped as React 18, React 19 (SSR) and styling packages. Second-largest contributor.</p>
+      <ul>
+        <li>Own much of the build &amp; release engineering: migrated the monorepo from pnpm to npm workspaces, stood up CI/CD on Azure Pipelines, and retired the legacy Jenkins pipeline.</li>
+        <li>Introduced visual-regression testing (Chromatic) and the React end-to-end / Storybook interaction testing setup.</li>
+        <li>Built net-new components end-to-end (e.g. Radio Button Group) across Stencil, generated React wrappers, SCSS, tests and Storybook stories.</li>
+        <li>Run the release cadence — versioning, changelogs and the Storybook documentation platform.</li>
+        <li>Built the AI developer-tooling layer: design-system coding guardrails (custom ESLint plugin + AI-agent hooks), reusable upgrade tooling, and an AI Slack assistant + autonomous curator agent (Claude Agent SDK + MCP, on Azure).</li>
+        <li>Co-built a scaffolding CLI that bootstraps new projects pre-wired with the design system, CI/CD and AI coding context.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__head">
+        <div class="job__title">Frontend Developer <span class="job__org">· Immersive Labs</span></div>
+        <div class="job__when">Dec 2021 – Feb 2024</div>
+      </div>
+      <ul>
+        <li>Web Frameworks team — developed the company's design system and drove accessibility compliance across the platform.</li>
+        <li>Earlier on the Cyber Ranges team with TypeScript, React and Node.js, with working knowledge of AWS infrastructure.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__head">
+        <div class="job__title">Software Engineer <span class="job__org">· Veygo</span></div>
+        <div class="job__when">Sep 2019 – Dec 2021</div>
+      </div>
+      <ul>
+        <li>Full-stack development with TypeScript, React, React Native, Python/Django, AWS and Terraform.</li>
+        <li>Front-end focus with an emphasis on testing (React Testing Library, Jest, Cypress) and the Storybook component library.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__head">
+        <div class="job__title">Widening Participation &amp; Outreach <span class="job__org">· Aberystwyth University</span></div>
+        <div class="job__when">2010 – 2019</div>
+      </div>
+      <ul>
+        <li>Nearly a decade in widening-access education before moving into software — designing and delivering STEM outreach and managing projects and student teams.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Speaking &amp; writing</h2>
+    <ul class="talklist">
+      <li><b>"An Uncomfortable Place"</b> — talk, ffconf 2025 (Brighton): shipping framework-agnostic component packages with web components &amp; Stencil.</li>
+      <li><b>"Your Design System is more than a UI library"</b> — talk, Natter, Manchester (2026): bridging design and code; extending a design system with a scoped AI assistant.</li>
+      <li><b>"Lasting Design System Infrastructure"</b> — guest on <i>The Question</i> podcast with Ben Callahan (2026).</li>
+      <li><b>"Solid foundations or shaky ground?"</b> — article, zeroheight blog: the essential role of infrastructure in design-system code.</li>
+      <li>Taught a Code First Girls intro to Python; delivered a free online course on Storybook for React; panels on women in tech and career-changing.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="two-col">
+      <div class="edu-row"><b>BSc (Hons) Computing — First Class</b><span>The Open University · 2019–2025</span></div>
+      <div class="edu-row"><b>MSc, Glaciology</b><span>Aberystwyth University · 2011–2013</span></div>
+      <div class="edu-row"><b>BScEcon (Hons), International Politics</b><span>Aberystwyth University · 2008–2011</span></div>
+      <div class="edu-row"><b>Beginners HTML/CSS Web Development</b><span>Code First Girls · 2018</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <p class="langs">English (native) · German, Welsh, French (elementary)</p>
+  </section>
+</body>
+</html>
