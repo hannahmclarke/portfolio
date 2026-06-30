@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hannah Clarke — Design Systems & Frontend Platform Engineer</title>
+  <meta name="description" content="Hannah Clarke — design systems and frontend platform engineer. I build the component libraries, release pipelines, developer tooling, and AI that let design systems scale." />
+  <meta name="color-scheme" content="dark light" />
+
+  <meta property="og:title" content="Hannah Clarke — Design Systems & Frontend Platform Engineer" />
+  <meta property="og:description" content="Component & icon libraries, build/release engineering, and AI-powered developer tooling." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23818cf8'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' fill='%230a0b10' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container container--wide nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hannah Clarke — home">
+        <span class="dot" aria-hidden="true"></span> Hannah Clarke
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="#work">Work</a>
+        <a class="nav__link" href="#speaking">Speaking</a>
+        <a class="nav__link" href="#recommendations">Praise</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle colour theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <span class="hero__avail reveal"><span class="pulse" aria-hidden="true"></span> Design systems · platform · developer experience</span>
+        <h1 class="hero__title reveal" data-delay="1">I build the systems that let <span class="text-gradient">design systems scale</span>.</h1>
+        <p class="hero__lead reveal" data-delay="2">
+          I'm a frontend engineer specialising in design systems and developer platforms — component and icon libraries,
+          build &amp; release pipelines, and the tooling (increasingly AI-powered) that helps whole teams ship on-system by default.
+          Currently at Intapp, a global software company serving professional &amp; financial services firms.
+        </p>
+        <div class="hero__cta reveal" data-delay="2">
+          <a class="btn btn--primary" href="#work">View selected work
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <div class="hero__meta reveal" data-delay="3">
+          <div class="stat">
+            <span class="stat__num">4</span>
+            <span class="stat__label">Shipped platform &amp; design-system projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">~18mo</span>
+            <span class="stat__label">Sustained ownership of a design system's build &amp; release</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">1,300+</span>
+            <span class="stat__label">Authored commits across the systems below</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section class="section section--tight" aria-labelledby="cap-title">
+      <div class="container">
+        <span class="eyebrow reveal">What I do</span>
+        <h2 class="section-title reveal" id="cap-title" data-delay="1">Four things I'm known for.</h2>
+        <div class="cap-grid">
+          <article class="cap reveal" data-delay="1">
+            <div class="cap__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+            <h3>Design systems</h3>
+            <p>Component &amp; icon libraries built on web components with React 18/19 + SSR wrappers, design tokens, and SCSS.</p>
+          </article>
+          <article class="cap reveal" data-delay="2">
+            <div class="cap__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+            <h3>Build &amp; release engineering</h3>
+            <p>Monorepos, package publishing, bundling architecture, CI/CD migrations, and disciplined versioned releases.</p>
+          </article>
+          <article class="cap reveal" data-delay="3">
+            <div class="cap__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+            <h3>Testing &amp; quality</h3>
+            <p>Visual-regression, end-to-end, and interaction testing wired into the pipeline so regressions never reach consumers.</p>
+          </article>
+          <article class="cap reveal" data-delay="3">
+            <div class="cap__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.5-1.5 3.2"/><circle cx="12" cy="14" r="6"/><path d="M12 11v3l2 1"/></svg></div>
+            <h3>Developer experience &amp; AI</h3>
+            <p>Scaffolding CLIs, AI coding guardrails, agents, and MCP tooling that make the right thing the easy thing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <span class="eyebrow reveal">Selected work</span>
+        <h2 class="section-title reveal" id="work-title" data-delay="1">Systems I helped build.</h2>
+        <p class="section-lead reveal" data-delay="1">Each is a real, in-production system. I've described my own contributions — verified against the commit history — within the context of the teams that built them.</p>
+
+        <div class="work-grid">
+          <!-- Card 1 -->
+          <a class="project-card reveal" data-delay="1" href="work/design-system.html">
+            <div class="project-card__top">
+              <span class="project-card__kind">Design system · core</span>
+              <span class="project-card__role">Core contributor</span>
+            </div>
+            <h3>Component Library</h3>
+            <p>A cross-product UI component library built on web components with auto-generated React 18/19 + SSR wrappers. I own much of its release engineering, CI/CD, testing infrastructure and developer tooling — and built components in it too.</p>
+            <div class="tags" style="margin-top:var(--sp-4)">
+              <span class="tag">Stencil</span><span class="tag">React</span><span class="tag">Chromatic</span><span class="tag">CI/CD</span>
+            </div>
+            <div class="project-card__foot">
+              <span class="project-card__arrow">Read the case study
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 2 -->
+          <a class="project-card reveal" data-delay="2" href="work/icon-library.html">
+            <div class="project-card__top">
+              <span class="project-card__kind">Design system · icons</span>
+              <span class="project-card__role">Build &amp; packaging lead</span>
+            </div>
+            <h3>Icon Library</h3>
+            <p>The icon delivery platform for the design system: SVG-to-component generation, an icon-font package, and a searchable browser, all published to a private registry and CDN. I architected the build, bundling and release pipeline.</p>
+            <div class="tags" style="margin-top:var(--sp-4)">
+              <span class="tag">Rollup</span><span class="tag">Vite</span><span class="tag">SVGR</span><span class="tag">CD pipeline</span>
+            </div>
+            <div class="project-card__foot">
+              <span class="project-card__arrow">Read the case study
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 3 -->
+          <a class="project-card reveal" data-delay="2" href="work/create-app-cli.html">
+            <div class="project-card__top">
+              <span class="project-card__kind">Developer tooling · CLI</span>
+              <span class="project-card__role">Co-creator</span>
+            </div>
+            <h3>create-app — Scaffolding CLI</h3>
+            <p>A "create-react-app"-style generator that bootstraps new frontend projects pre-wired with the design system, CI/CD and AI coding context. I built the on-system enforcement layer, the upgrade system, and the deployment pipelines.</p>
+            <div class="tags" style="margin-top:var(--sp-4)">
+              <span class="tag">Node CLI</span><span class="tag">ESLint plugin</span><span class="tag">AI guardrails</span><span class="tag">SSR deploy</span>
+            </div>
+            <div class="project-card__foot">
+              <span class="project-card__arrow">Read the case study
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 4 -->
+          <a class="project-card reveal" data-delay="3" href="work/ds-assistant.html">
+            <div class="project-card__top">
+              <span class="project-card__kind">AI · agents &amp; MCP</span>
+              <span class="project-card__role">Sole engineer</span>
+            </div>
+            <h3>Design System AI Assistant</h3>
+            <p>An AI Slack bot and autonomous "curator" agent that answers design-system questions from Figma, Storybook, docs and the codebase — with a knowledge base exposed over MCP. Designed and built end-to-end, solo.</p>
+            <div class="tags" style="margin-top:var(--sp-4)">
+              <span class="tag">Claude SDK</span><span class="tag">Agent SDK</span><span class="tag">MCP</span><span class="tag">Slack Bolt</span>
+            </div>
+            <div class="project-card__foot">
+              <span class="project-card__arrow">Read the case study
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <span class="eyebrow reveal">About</span>
+        <h2 class="section-title reveal" id="about-title" data-delay="1">The engineer under the design system.</h2>
+        <div class="about-grid" style="margin-top:var(--sp-6)">
+          <div class="reveal" data-delay="1">
+            <p>Most design-system conversations are about the components people can see. I tend to work a layer below that — on the build, release, testing and tooling that decide whether a system is actually adoptable: whether a component ships reliably, whether an upgrade is painless, whether a regression is caught before it reaches a consuming app.</p>
+            <p>Over the last couple of years I've owned that layer for a multi-package design system — migrating its build system, standing up its CI/CD, introducing visual-regression testing, and building the developer tooling around it — while also shipping components and, more recently, the AI tooling that helps both engineers and designers stay on-system. I like the problems that sit between disciplines: build engineering, DX, and now applied AI.</p>
+            <p>I came into engineering the long way round — from nearly a decade in widening-access education — and I care about widening that door for others. I've taught a Code First Girls intro to Python, built and delivered a free online course on Storybook for React, and spoken on panels about women in tech and changing careers.</p>
+          </div>
+          <aside class="about-card reveal" data-delay="2">
+            <h3>Toolbox</h3>
+            <ul class="about-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> TypeScript, Stencil web components, React 18/19, Next.js (SSR)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Vite, Rollup, npm workspaces, Changesets, SCSS &amp; design tokens</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Storybook, Chromatic, Playwright, Puppeteer, Vitest/Jest</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Azure Pipelines, Azure App Service, CDN delivery</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Anthropic SDK, Agent SDK, MCP, Slack Bolt, Node CLIs</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKING & WRITING -->
+    <section class="section" id="speaking" aria-labelledby="speaking-title">
+      <div class="container">
+        <span class="eyebrow reveal">Speaking &amp; writing</span>
+        <h2 class="section-title reveal" id="speaking-title" data-delay="1">Sharing the work.</h2>
+        <p class="section-lead reveal" data-delay="1">I enjoy talking about the messy, real parts of design-system work — not just the polished results.</p>
+
+        <div class="speaking-list">
+          <article class="talk reveal" data-delay="1">
+            <span class="talk__type">Talk</span>
+            <div>
+              <h3 class="talk__title">Your Design System is more than a UI library</h3>
+              <p class="talk__meta">Natter · Manchester · 30 Apr 2026</p>
+              <p class="talk__desc">How a three-person design-systems team stays ahead: shipping framework-agnostic component packages built once as web components (and wrapped for React via Stencil, with Storybook docs alongside), then extending the system with a scoped AI assistant so design, product and engineering can self-serve. A practical look at bridging design and code as AI reshapes how products get built.</p>
+            </div>
+            <a class="talk__link" href="https://www.natter.community/events/april-meetup-30-04-2026" target="_blank" rel="noopener" aria-label="View the Natter event">
+              Details
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </article>
+
+          <article class="talk reveal" data-delay="2">
+            <span class="talk__type">Podcast</span>
+            <div>
+              <h3 class="talk__title">Lasting Design System Infrastructure</h3>
+              <p class="talk__meta">The Question with Ben Callahan · Episode 070 · Mar 2026</p>
+              <p class="talk__desc">A guest conversation on building design systems that last — web-component delivery strategies, the framework-agnostic debate, API flexibility, the "unicorn-hire" problem, and the community that makes a system worth maintaining.</p>
+              <div class="talk__links">
+                <a href="https://bit.ly/416e3sJ" target="_blank" rel="noopener">Deep dive · audio
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+                <a href="https://bit.ly/3P93Rgy" target="_blank" rel="noopener">Deep dive · video
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+                <a href="https://bit.ly/40yjgJH" target="_blank" rel="noopener">Recap · audio
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+                <a href="https://bit.ly/3PED8sc" target="_blank" rel="noopener">Recap · video
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+                <a href="https://bit.ly/4rxa9E8" target="_blank" rel="noopener">FigJam board
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+              </div>
+            </div>
+            <a class="talk__link" href="https://bit.ly/416e3sJ" target="_blank" rel="noopener" aria-label="Listen to the deep-dive episode">
+              Listen
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </article>
+
+          <article class="talk reveal" data-delay="3">
+            <span class="talk__type">Article</span>
+            <div>
+              <h3 class="talk__title">Solid foundations or shaky ground?</h3>
+              <p class="talk__meta">zeroheight blog · The essential role of infrastructure in design system code</p>
+              <p class="talk__desc">A piece for the zeroheight blog on why the infrastructure beneath a design system — the build, release and tooling layer — is what really determines whether the system gets adopted, scales, and ships reliably. The argument behind much of my day-to-day work.</p>
+            </div>
+            <a class="talk__link" href="https://zeroheight.com/blog/the-essential-role-of-infrastructure-in-design-system-code/" target="_blank" rel="noopener" aria-label="Read the article on zeroheight">
+              Read
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </article>
+
+          <article class="talk reveal" data-delay="3">
+            <span class="talk__type">Talk</span>
+            <div>
+              <h3 class="talk__title">An Uncomfortable Place</h3>
+              <p class="talk__meta"><a href="https://ffconf.org/articles/2025-meet-the-speaker-hannah/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">ffconf 2025</a> · 14 Nov 2025 · Brighton</p>
+              <p class="talk__desc">A conference talk on a genuinely awkward design-system question: how do you ship component packages that keep everyone happy <em>regardless of their framework?</em> Makes the case for web components (built with Stencil) as the cross-framework foundation — told through real stories rather than a tidy success narrative.</p>
+            </div>
+            <a class="talk__link" href="https://www.youtube.com/watch?v=rOHLNP-_Oi0" target="_blank" rel="noopener" aria-label="Watch the talk on YouTube">
+              Watch
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </article>
+        </div>
+
+        <p class="note-inline reveal" data-delay="2">
+          Got more? Send me the titles, links and dates of any other talks or articles and I'll add them here as matching cards.
+        </p>
+      </div>
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section class="section" id="recommendations" aria-labelledby="rec-title">
+      <div class="container">
+        <span class="eyebrow reveal">Recommendations</span>
+        <h2 class="section-title reveal" id="rec-title" data-delay="1">In other people's words.</h2>
+        <p class="section-lead reveal" data-delay="1">A few words from engineers and designers I've worked with — on my team and across it.</p>
+
+        <div class="testimonials">
+          <div class="quotes-grid" style="margin-top:var(--sp-7)">
+            <figure class="quote-card reveal" data-delay="1">
+              <blockquote>We built a code-driven design system serving multiple product teams, and her impact was irreplaceable. She can dive into any infrastructure challenge — diagnosing complex issues, proposing pragmatic solutions, and delivering clean, reliable implementations. A generous collaborator, always eager to share AI skills and knowledge with other teams. Hannah elevates every team she joins.</blockquote>
+              <figcaption class="quote-card__author">
+                <span class="quote-card__who">
+                  <span class="quote-card__name">UI Engineer, Intapp</span>
+                  <span class="quote-card__title">Same team</span>
+                </span>
+              </figcaption>
+            </figure>
+            <figure class="quote-card reveal" data-delay="2">
+              <blockquote>A genius, but extremely chill about it. She casually revolutionised how the entire design team worked — a new way of prototyping in Claude that cut our design-and-deliver time in half. She speaks both Design and Engineering and code-switches effortlessly between them, which is critical as those roles blur in the age of AI. When our team went AI-first, she set us up for success.</blockquote>
+              <figcaption class="quote-card__author">
+                <span class="quote-card__who">
+                  <span class="quote-card__name">Senior UX Designer</span>
+                  <span class="quote-card__title">Worked with Hannah</span>
+                </span>
+              </figcaption>
+            </figure>
+            <figure class="quote-card reveal" data-delay="1">
+              <blockquote>A talented UI Engineer who combines creativity, technical skill, and strategic thinking in a way that really stands out. She brings fresh ideas and looks for ways to create better, more scalable experiences — a great collaborator who makes the work better.</blockquote>
+              <figcaption class="quote-card__author">
+                <span class="quote-card__who">
+                  <span class="quote-card__name">UX Designer, Intapp</span>
+                  <span class="quote-card__title">Colleague</span>
+                </span>
+              </figcaption>
+            </figure>
+            <figure class="quote-card reveal" data-delay="2">
+              <blockquote>An exceptional talk on the challenges of integrating a design system within a diverse app ecosystem. Her ability to discuss intricate, sometimes uncomfortable topics was truly impressive — a great example of impactful storytelling.</blockquote>
+              <figcaption class="quote-card__author">
+                <span class="quote-card__who">
+                  <span class="quote-card__name">Engineering Manager, Meta</span>
+                  <span class="quote-card__title">ffconf talk</span>
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+          <a class="testimonials__link reveal" href="https://www.linkedin.com/in/hannah-clarke/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener">
+            Read all recommendations on LinkedIn
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <span class="eyebrow reveal">Experience &amp; education</span>
+        <h2 class="section-title reveal" id="exp-title" data-delay="1">The path here.</h2>
+        <p class="section-lead reveal" data-delay="1">A non-linear route into engineering — from widening-access education to building design systems — with a First-Class Computing degree earned along the way.</p>
+
+        <div class="cv reveal" data-delay="1">
+          <div class="cv-item">
+            <div class="cv-item__when">Jul 2024 – Present</div>
+            <div>
+              <div class="cv-item__role">UI Engineer, Design System <span class="cv-item__co">· Intapp</span></div>
+              <p class="cv-item__desc">Building the coded side of a multi-product design system — researching tooling, architecture and infrastructure to serve every product team, building and documenting cross-framework components, and integrating AI to improve the developer experience.</p>
+            </div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item__when">Dec 2021 – Feb 2024</div>
+            <div>
+              <div class="cv-item__role">Frontend Developer <span class="cv-item__co">· Immersive Labs</span></div>
+              <p class="cv-item__desc">On the Web Frameworks team — developing the design system and driving accessibility compliance across the platform. Earlier, full-stack work (TypeScript, React, Node, AWS) on the Cyber Ranges team.</p>
+            </div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item__when">Sep 2019 – Dec 2021</div>
+            <div>
+              <div class="cv-item__role">Software Engineer <span class="cv-item__co">· Veygo</span></div>
+              <p class="cv-item__desc">Full-stack development (TypeScript, React, React Native, Python/Django, AWS, Terraform) with an emphasis on testing (RTL, Jest, Cypress) and the Storybook component library.</p>
+            </div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item__when">2010 – 2019</div>
+            <div>
+              <div class="cv-item__role">Widening Participation &amp; Outreach <span class="cv-item__co">· Aberystwyth University</span></div>
+              <p class="cv-item__desc">Nearly a decade in widening-access education before moving into tech — designing and delivering STEM outreach, and managing projects and student teams. The teaching and communication instincts still shape how I work.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu reveal" data-delay="2">
+          <div class="edu-item">
+            <div class="edu-item__deg">BSc (Hons) Computing — First Class</div>
+            <div class="edu-item__inst">The Open University · 2025</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-item__deg">MSc, Glaciology</div>
+            <div class="edu-item__inst">Aberystwyth University</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-item__deg">BScEcon (Hons), International Politics</div>
+            <div class="edu-item__inst">Aberystwyth University</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-item__deg">Beginners HTML/CSS Web Development</div>
+            <div class="edu-item__inst">Code First Girls · 2018</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER / CONTACT -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <span class="eyebrow reveal">Contact</span>
+      <p class="footer__cta reveal" data-delay="1">Let's build something <span class="text-gradient">worth shipping</span>.</p>
+      <div class="footer__row reveal" data-delay="1">
+        <p style="max-width:46ch;color:var(--text-muted)">Open to conversations about design systems, frontend platform, and developer-experience roles.</p>
+        <div class="footer__links">
+          <a href="mailto:hc.hannahclarke@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/hannah-clarke" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/hannahmclarke" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <p class="footer__fine">© <span data-year>2026</span> Hannah Clarke. Built as a static site with its own design-token system — no framework, no build step.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

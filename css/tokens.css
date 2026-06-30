@@ -1,0 +1,141 @@
+/* ============================================================
+   Design Tokens
+   The visual language of this site, expressed as CSS custom
+   properties — the same token-driven approach I use when
+   building design systems. Theming (light/dark) is a simple
+   matter of re-pointing semantic tokens at different palettes.
+   ============================================================ */
+
+:root {
+  /* --- Palette (raw values) --- */
+  --c-indigo-300: #a5b4fc;
+  --c-indigo-400: #818cf8;
+  --c-indigo-500: #6366f1;
+  --c-violet-400: #a855f7;
+  --c-violet-500: #8b5cf6;
+  --c-cyan-400:   #22d3ee;
+  --c-amber-400:  #fbbf24;
+
+  --c-ink-950: #0a0b10;
+  --c-ink-900: #0f1117;
+  --c-ink-850: #14161f;
+  --c-ink-800: #1a1d28;
+  --c-ink-700: #242838;
+  --c-ink-600: #343a4f;
+  --c-slate-400: #9aa1b9;
+  --c-slate-300: #b9c0d4;
+  --c-paper-50: #fbfbfd;
+  --c-paper-100: #f3f4f8;
+  --c-paper-200: #e8eaf1;
+  --c-paper-300: #d7dae6;
+  --c-white: #ffffff;
+
+  /* --- Type scale (1.250 major-third) --- */
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --fs-xs:   0.78rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-md:   1.15rem;
+  --fs-lg:   1.45rem;
+  --fs-xl:   1.95rem;
+  --fs-2xl:  2.6rem;
+  --fs-3xl:  3.4rem;
+  --fs-4xl:  clamp(2.8rem, 7vw, 5rem);
+
+  --lh-tight: 1.12;
+  --lh-snug: 1.3;
+  --lh-base: 1.65;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* --- Spacing scale (4px base) --- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --sp-10: 8rem;
+
+  /* --- Radius --- */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 28px;
+  --r-full: 999px;
+
+  /* --- Layout --- */
+  --container: 1080px;
+  --container-wide: 1200px;
+
+  /* --- Motion --- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 160ms;
+  --dur: 320ms;
+  --dur-slow: 600ms;
+
+  /* --- Brand gradient --- */
+  --grad-brand: linear-gradient(115deg, var(--c-indigo-400), var(--c-violet-400) 55%, var(--c-cyan-400));
+}
+
+/* ===================== DARK THEME (default) ===================== */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg:        var(--c-ink-950);
+  --bg-elev-1: var(--c-ink-900);
+  --bg-elev-2: var(--c-ink-850);
+  --surface:   var(--c-ink-800);
+  --surface-hover: var(--c-ink-700);
+  --border:    rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  --text:      #eceef6;
+  --text-muted: var(--c-slate-400);
+  --text-soft: var(--c-slate-300);
+
+  --accent:    var(--c-indigo-400);
+  --accent-2:  var(--c-cyan-400);
+  --on-accent: #0a0b10;
+
+  --glow: radial-gradient(60% 60% at 50% 0%, rgba(124, 92, 255, 0.22), transparent 70%);
+  --shadow-1: 0 1px 2px rgba(0,0,0,0.4);
+  --shadow-2: 0 8px 30px rgba(0,0,0,0.45);
+  --shadow-card: 0 1px 0 rgba(255,255,255,0.04) inset, 0 12px 40px -12px rgba(0,0,0,0.7);
+}
+
+/* ===================== LIGHT THEME ===================== */
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg:        var(--c-paper-50);
+  --bg-elev-1: var(--c-white);
+  --bg-elev-2: var(--c-paper-100);
+  --surface:   var(--c-white);
+  --surface-hover: var(--c-paper-100);
+  --border:    rgba(15, 17, 23, 0.10);
+  --border-strong: rgba(15, 17, 23, 0.18);
+
+  --text:      #14161f;
+  --text-muted: #5b6178;
+  --text-soft: #3a3f54;
+
+  --accent:    var(--c-indigo-500);
+  --accent-2:  #0891b2;
+  --on-accent: #ffffff;
+
+  --glow: radial-gradient(60% 60% at 50% 0%, rgba(124, 92, 255, 0.12), transparent 70%);
+  --shadow-1: 0 1px 2px rgba(16,18,31,0.06);
+  --shadow-2: 0 8px 30px rgba(16,18,31,0.12);
+  --shadow-card: 0 1px 0 rgba(255,255,255,0.6) inset, 0 14px 40px -16px rgba(16,18,31,0.22);
+}
